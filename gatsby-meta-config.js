@@ -2,7 +2,7 @@ module.exports = {
   title: `In Progress`,
   description: `늘 하던것만 하면, 늘 얻던 것만 얻는다.`,
   author: `Kyeongin`,
-  introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
+  introduction: `늘 하던것만 하면, 늘 얻던 것만 얻는다.`,
   siteUrl: `http://kkyeongin.github.io/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
