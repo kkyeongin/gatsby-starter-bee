@@ -1,6 +1,6 @@
 module.exports = {
   title: `In Progress`,
-  description: `필요한 것들을 정리`,
+  description: `늘 하던것만 하면, 늘 얻던 것만 얻는다.`,
   author: `Kyeongin`,
   introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
   siteUrl: `http://kkyeongin.github.io/`, // Your blog site url
