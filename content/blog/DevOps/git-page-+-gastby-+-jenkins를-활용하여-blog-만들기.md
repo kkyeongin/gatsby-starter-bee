@@ -47,8 +47,20 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 OK
 ```
 
+* apt-transport-https: 패키지 관리자가 https를 통해 파일 및 데이터를 전송할 수 있도록합니다.
+  
+* ca-certificates: 시스템 및 웹 브라우저가 보안 인증서를 확인할 수 있도록합니다.
+  
+* curl: ftp 같이 웹에서 데이터를 받아올 수 있습니다.
+
+* software-properties-common: software managent 를 위해 script를 추가하는 api
+
+
+
+[다른 repositories에 관한 정보](https://docs.docker.com/v17.09/engine/installation/linux/docker-ce/ubuntu/#set-up-the-repository) 를 확인한 수 받으시면 됩니다.
+
 ```sh
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable" 
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
 
 sudo apt-get update
 ```
@@ -62,3 +74,7 @@ sudo apt-get install docker-ce   # Docker CE (Community Edition)
 ```sh
 docker --version
 ```
+
+### 참고
+[https://docs.docker.com/install/](https://docs.docker.com/install/)
+[https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04)
