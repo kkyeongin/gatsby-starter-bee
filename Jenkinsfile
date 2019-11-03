@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'python --version'
-                sh 'yarn global install gatsby-cli'
+                sh 'yarn global add gatsby-cli'
                 sh 'yarn install'
             }
         }
