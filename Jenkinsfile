@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') { 
             steps {
                 sh 'ifconfig'
-                sh 'ssh-keysen -R 172.17.0.1
+                sh 'ssh-keysen -R 172.17.0.1'
                 sh 'yarn run deploy' 
             }
         }
