@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[In Progress]]></title><description><![CDATA[통찰은 몇 가지 단서만으로는 얻어지지 않는다]]></description><link>http://kkyeongin.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 Nov 2019 04:36:57 GMT</lastBuildDate><item><title><![CDATA[Quick Start]]></title><description><![CDATA[Getting Started 😎 1. Create a Gatsby site. If you are not using , following Gatsby Getting Started 2. Start developing. 3. Add your content…]]></description><link>http://kkyeongin.github.io/Hi-Blog/quick_start/</link><guid isPermaLink="false">http://kkyeongin.github.io/Hi-Blog/quick_start/</guid><pubDate>Fri, 31 May 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;getting-started-&quot;&gt;&lt;a href=&quot;#getting-started-&quot; aria-label=&quot;getting started  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started 😎&lt;/h1&gt;
+&lt;h2 id=&quot;1-create-a-gatsby-site&quot;&gt;&lt;a href=&quot;#1-create-a-gatsby-site&quot; aria-label=&quot;1 create a gatsby site permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Create a Gatsby site.&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# create a new Gatsby site using the blog starter
+$ npx gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are not using &lt;code class=&quot;language-text&quot;&gt;npx&lt;/code&gt;, following &lt;a href=&quot;https://www.gatsbyjs.org/docs/quick-start&quot;&gt;Gatsby Getting Started&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ npm install -g gatsby-cli
+$ gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;2-start-developing&quot;&gt;&lt;a href=&quot;#2-start-developing&quot; aria-label=&quot;2 start developing permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Start developing.&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ cd my-blog-starter/
+$ npm start
+# open localhost:8000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;3-add-your-content&quot;&gt;&lt;a href=&quot;#3-add-your-content&quot; aria-label=&quot;3 add your content permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Add your content&lt;/h2&gt;
+&lt;p&gt;You can write…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;contents to blog in &lt;code class=&quot;language-text&quot;&gt;content/blog&lt;/code&gt; directory.&lt;/li&gt;
+&lt;li&gt;resume &lt;code class=&quot;language-text&quot;&gt;content/__about&lt;/code&gt; directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With markdown syntax and some meta data&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;support-script-for-creating-new-post&quot;&gt;&lt;a href=&quot;#support-script-for-creating-new-post&quot; aria-label=&quot;support script for creating new post permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Support script for creating new post&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;assets/cli-tool-example.gif&quot;&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ npm run post&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;4-fix-meta-data&quot;&gt;&lt;a href=&quot;#4-fix-meta-data&quot; aria-label=&quot;4 fix meta data permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Fix meta data&lt;/h2&gt;
+&lt;p&gt;You can fix meta data of blog in &lt;code class=&quot;language-text&quot;&gt;/gatsby-meta-config.js&lt;/code&gt; file.&lt;/p&gt;
+&lt;h2 id=&quot;5-publish-with-netlify&quot;&gt;&lt;a href=&quot;#5-publish-with-netlify&quot; aria-label=&quot;5 publish with netlify permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. Publish with &lt;a href=&quot;https://netlify.com&quot;&gt;netlify&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://app.netlify.com/start/deploy?repository=https://github.com/JaeYeopHab/gatsby-starter-bee&quot;&gt;&lt;img src=&quot;https://www.netlify.com/img/deploy/button.svg&quot; alt=&quot;Deploy to Netlify&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;💡 if you want to deploy github pages, add following script to package.json&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token property&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;deploy&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby build &amp;amp;&amp;amp; gh-pages -d public -b master -r &apos;git@github.com:${your github id}/${github page name}.github.io.git&apos;&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;memo-write-a-post&quot;&gt;&lt;a href=&quot;#memo-write-a-post&quot; aria-label=&quot;memo write a post permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;:memo: Write a post!&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;content
+├── __about
+└── blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;You can register your resume on the web. (in &lt;code class=&quot;language-text&quot;&gt;__about&lt;/code&gt; directory)&lt;/li&gt;
+&lt;li&gt;You can register your post. (in &lt;code class=&quot;language-text&quot;&gt;blog&lt;/code&gt; directory)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;🧐-customize&quot;&gt;&lt;a href=&quot;#%F0%9F%A7%90-customize&quot; aria-label=&quot;🧐 customize permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;🧐 Customize!&lt;/h1&gt;
+&lt;h2 id=&quot;gatsby-config&quot;&gt;&lt;a href=&quot;#gatsby-config&quot; aria-label=&quot;gatsby config permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gatsby config&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/root
+├── gatsby-browser.js // font, polyfill, onClientRender ...
+├── gatsby-config.js // Gatsby config
+├── gatsby-meta-config.js // Template meta config
+└── gatsby-node.js // Gatsby Node config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;structure&quot;&gt;&lt;a href=&quot;#structure&quot; aria-label=&quot;structure permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Structure&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;src
+├── components // Just component with styling
+├── layout // home, post layout
+├── pages // routing except post: /(home), /about
+├── styles
+│   ├── code.scss
+│   ├── dark-theme.scss
+│   ├── light-theme.scss
+│   └── variables.scss
+└── templates
+    ├── blog-post.js
+    └── home.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;style&quot;&gt;&lt;a href=&quot;#style&quot; aria-label=&quot;style permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Style&lt;/h2&gt;
+&lt;p&gt;You can customize color in &lt;code class=&quot;language-text&quot;&gt;src/styles&lt;/code&gt; directory.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;src/styles
+├── code.scss
+├── dark-theme.scss
+├── light-theme.scss
+└── variables.scss&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Welcome to gatsby-starter-bee!
+Happy blogging! 👻&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Data Abstraction]]></title><description><![CDATA[Data Abstraction 데이터의 구조를 숨기고 interface를 통해 사용
+data를 combination하는 법을 알아보자. 들어가기 전에 procedural abstraction을 먼저 알아보자. procedural abstraction…]]></description><link>http://kkyeongin.github.io/SICP/Data-Abstraction/</link><guid isPermaLink="false">http://kkyeongin.github.io/SICP/Data-Abstraction/</guid><pubDate>Wed, 20 Feb 2019 18:02:47 GMT</pubDate><content:encoded>&lt;h1 id=&quot;data-abstraction&quot;&gt;&lt;a href=&quot;#data-abstraction&quot; aria-label=&quot;data abstraction permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data Abstraction&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;데이터의 구조를 숨기고 interface를 통해 사용
+data를 combination하는 법을 알아보자.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;들어가기 전에 procedural abstraction을 먼저 알아보자.&lt;/p&gt;
+&lt;h2 id=&quot;procedural-abstraction&quot;&gt;&lt;a href=&quot;#procedural-abstraction&quot; aria-label=&quot;procedural abstraction permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;procedural abstraction&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;common pattern을 찾고&lt;/li&gt;
+&lt;li&gt;람다를 사용해서 procedure를 나타내고&lt;/li&gt;
+&lt;li&gt;이름을 붙인다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;ei&quot;&gt;&lt;a href=&quot;#ei&quot; aria-label=&quot;ei permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;e.i&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;let goodEnough guess x =
+    abs (guess * guess - x) &amp;lt; 0.00001
+
+let average x y =
+    (x+y) / 2.0
+
+let improve guess x =
+    average guess (x / guess)
+
+let rec loop guess x =
+    if goodEnough guess x
+    then guess
+    else loop (improve guess x) x
+    ; with full thinking
+
+let sqrt x = loop 1.0 x&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;다시 사용될 코드는 밖에로 빼고
+dependency가 강한 것들은 같은 함수로 넣어주는 것이 좋다.
+—&gt; block structure&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB40lEQVQ4y4VTaXOqQBDk//82rcoXjSeeiAosy7WgIJ3pSfD5UlZlrGbdq+npGbwsy+D7PsIwxGazwW63w/F41JFzYrlcyXyL/X6PIAiwWCxQVRUYfd8rhv+ec04vE6vVCtvt9knMue+vhWCO2ecch8NBMZ1O4VyN1xiIPfwRXQe53CGzjdz6vfdA07R4PB7PNSVs204utYiiHJdrKmnFSNNK4HTk/u12R2pK1O6mI9cz65BlDsZUKPJaiT0+rFwMgqukuUccR7A2k7T3KIriP0VlcZO1RpR1qu5VcS6E1lbwbs0drrrjej2rZ+fzGXXt1MckiX9S6xR9z9R6VUI8iX+Caj1Kvd+/fWBBaDqrzopGUaTI81zVEtZaxTBPkkTSt0qoCnNhHarEA6PRCLPZTJUaY1QpSdM01ZexzUjINmPrUCXnqlA89VgIYxKMx2M9xOB4uVz0IEn5MvYfLSnLUsEXkZyZnU4BJpO59O8ZXlnWshBp41IJSaiEhCRmkw9N3DTNk7Bt26e/y6WPj4+JZGG+26auW82/qkolWq/XSnY6nVQJPXwXVN51rfgd/uvD4bNJklxUHsXHXP0jGRHHsaZG83+DdtCuMIyksNIF8vNev0Urpjpp3HdK3uhTcMsYp4SMLwta4x1636vAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;block structure&quot;
+        title=&quot;block structure&quot;
+        src=&quot;/static/b7bee163eac671cb693dc07d66821790/b9e4f/block_structure.png&quot;
+        srcset=&quot;/static/b7bee163eac671cb693dc07d66821790/cf440/block_structure.png 148w,
+/static/b7bee163eac671cb693dc07d66821790/d2d38/block_structure.png 295w,
+/static/b7bee163eac671cb693dc07d66821790/b9e4f/block_structure.png 590w,
+/static/b7bee163eac671cb693dc07d66821790/164b6/block_structure.png 780w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;let average x y =
+    (x+y) / 2.0
+
+; block structure
+let sqrt x =
+    let goodEnough guess x =
+        abs (guess * guess - x) &amp;lt; 0.00001
+    let improve guess x =
+        average guess (x / guess)
+    let rec loop guess x =
+        if goodEnough guess x
+        then guess
+        else loop (improve guess x) x
+    loop 1.0 x&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 다시 돌아와서 Data Abstraction을 어떻게 이루어지 알아보자.  &lt;/p&gt;
+&lt;h2 id=&quot;compound-data&quot;&gt;&lt;a href=&quot;#compound-data&quot; aria-label=&quot;compound data permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;compound data&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;묶어서 만들어야(constructor) 하며, 해체(selector or accessor) 또한 가능해야 한다.
+predicate; pair인지 아닌지 (boolean)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;pair&quot;&gt;&lt;a href=&quot;#pair&quot; aria-label=&quot;pair permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;pair&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;type Pair&amp;lt;&amp;#39;a,&amp;#39;b&amp;gt; = Pair of &amp;#39;a * &amp;#39;b
+
+let cons x y = Pair (x,y)
+let car (Pair (x,y)) = x
+let cdr (Pair (x,y)) = y
+
+let makePoint x y = cons x y
+let pointX p = car p
+let pointY p = cdr p
+let makeLine p1 p2 = cons p1 p2
+let start_point line = car line
+
+(*
+lengthOfLine = sqrt ((x1-x2)^2 + (y1 - y2)^2)
+*)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;list&quot;&gt;&lt;a href=&quot;#list&quot; aria-label=&quot;list permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;list&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.080213903743314%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABdUlEQVQoz31Sa3OCMBDk//8sv7QfWq2OD0YEVBQrz4QA8hC3lzigMtjMJNlMLnt3u9E8z8N0OoWu6xiPxwovFgusVitMJhOF5QwCH+u1DsNYoz9ut1uHNSEEdrsdDocDbNuGaZoKO46jsNxd14Xvx5jNNpjPt4jjEtfrFXVdd2TtrsklCAJFwhhT5EmS4Hw+w7IsZFmmAn0vx88kwMbgmC9CpGmGKAoV8QuhBO1sL/q4ae5n98gpWfF/yxgYT/ddcNM04AlHUVxekvUL0MqyJLHXSivZpq6vwDkj/TbYbk1UVaHIfn+PWC6XpF+E4SKeWpY6yEc3mkIUZE6M/Z7BshlhRsk4nTmR1yjLSj7H5VLDOSSUVN4njwp7eciECp8fJwrk9HVCjEZ7RW4YESVuOmeLoqYv5uP766QK6AiHtAh8QcR38cNQ0ONisD3GUpInf2jamvJMJh0VIkGe3wOzLFXfaMgAzjm1nr+YpL2zv3/uk72L+wMoFlEWIJZLIwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;list 2&quot;
+        title=&quot;list 2&quot;
+        src=&quot;/static/91a3c28ca1f2f70f9f31b4b3c12d443e/b9e4f/list_2.png&quot;
+        srcset=&quot;/static/91a3c28ca1f2f70f9f31b4b3c12d443e/cf440/list_2.png 148w,
+/static/91a3c28ca1f2f70f9f31b4b3c12d443e/d2d38/list_2.png 295w,
+/static/91a3c28ca1f2f70f9f31b4b3c12d443e/b9e4f/list_2.png 590w,
+/static/91a3c28ca1f2f70f9f31b4b3c12d443e/30cfa/list_2.png 748w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pair로 list를 만들 수도 있다. 구조체를 보자면 linked list다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;(*
+fromTo 1 4
+...
+==&amp;gt; 1 :: (2 :: (3 :: (4 :: [])))
+...
+==&amp;gt; [1;2;3;4]
+*)
+
+let rec fromTo start finish =
+    if start &amp;gt; finish then []
+    else start :: fromTo (start+1) finish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;let rec length ls =
+    if ls = [] then 0
+    else 1 + length (List.tail ls)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;결론적으로 data abstructure는 data 구조가 어떻게 구현되었는지는 감춘다. constructor와 selector를 interface 통해 사용하면 된다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 76.8545994065282%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACaklEQVQ4y3WUW3PaMBCF8///RPuSafOcpm9NM20ojMFALphbIA6Yu2OwZOEb9ulqSYhJWs0I2Wvr27N7ZE6UUri8vESj0YBpmqhWq+j3+7Asi2OGYXBMr+VyGb1eD3rkec7z/fVJHMf8km3bGI1GGI/HmM1mWCwWfK1jk8kE0+mU7z3PQ3EUoQzUP+12G5VKBZ1Oh9Xpew3QIF2BlBI6sd4khIDruhwLguAIdgBGUYThcMhqHMfhTVqlVlSr1XBxccGrjpVKJZyfn+P29hbNZhNZlh0rLNJfh06wXC6pjy3U6yYGgwHm8zkD9NT91clWq9XHHnKAZvay8sPX/rxL9DE1b0BOKt8U0o3s3UB2m9hObIRTG8ruInRn2C4cZGlKG3bIdvv1X84WDWKFie9BdBpQT31E6xWUM4QcWFjXf0ESPFq7WNd+Ihi0ENCzjMCvitOpg4Rak1PiQ8nFkpJAQE0fISlBQDANFL0mRNuEfLSgnmekOuH3024b/udPqJ1dY/7jz5spWRIfykqjEKmSSKWPlOIcUz52cYRdGh/1UVSqKJ+VcXVqwD39SmpinGjbfVKzvikjGD1AjnoQVNp2MWGlWrGGMngbYBcqTsrAiQfzy294374jMY23kpOtgho/IPafET7PEcsNwcic2RM2jWsuW8e92hVEtwHxcI9E7Q814hC5FHvl2pSiUxmVFbkE1MaQ2s29AdG/I+V9bFoGgqFFfWxju3SwS6KjI4YX1w9A3TO/VeXypd2Bb5lkRB3hYkyTnKS+MuDF4eLROTrYeeGzif01wjkBSGFAJcvBPcNjJY7P3H/+afT4C0vDcbhK6yW4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data abstraction&quot;
+        title=&quot;data abstraction&quot;
+        src=&quot;/static/8c5a26890de3e40d2e7b5adc7949e876/b9e4f/data_abstraction.png&quot;
+        srcset=&quot;/static/8c5a26890de3e40d2e7b5adc7949e876/cf440/data_abstraction.png 148w,
+/static/8c5a26890de3e40d2e7b5adc7949e876/d2d38/data_abstraction.png 295w,
+/static/8c5a26890de3e40d2e7b5adc7949e876/b9e4f/data_abstraction.png 590w,
+/static/8c5a26890de3e40d2e7b5adc7949e876/61857/data_abstraction.png 674w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;detail을 숨기고 interface를 사용하도록 한다면 나중의 확장성 및 변경에 영향이 없도록 함이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;관련 문서&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/lecture-notes/lecture5webhand.pdf&quot;&gt;SICP&lt;em&gt;L5&lt;/em&gt;Data Abstraction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Symbol]]></title><description><![CDATA[Symbol integer, char, string 말고 다른거 Symbolic differentiation 실제 값을 받는게 아니라 결과값을 심볼로 다루고 싶다. 아래 예제처럼 x^2/dx = 2x xy/dx = y (x^2+x)/dx = 2x+…]]></description><link>http://kkyeongin.github.io/SICP/Symbol/</link><guid isPermaLink="false">http://kkyeongin.github.io/SICP/Symbol/</guid><pubDate>Wed, 20 Feb 2019 18:02:47 GMT</pubDate><content:encoded>&lt;h1 id=&quot;symbol&quot;&gt;&lt;a href=&quot;#symbol&quot; aria-label=&quot;symbol permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Symbol&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;integer, char, string 말고 다른거&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;symbolic-differentiation&quot;&gt;&lt;a href=&quot;#symbolic-differentiation&quot; aria-label=&quot;symbolic differentiation permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Symbolic differentiation&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;실제 값을 받는게 아니라 결과값을 심볼로 다루고 싶다. 아래 예제처럼&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;x^2/dx = 2x&lt;/li&gt;
+&lt;li&gt;xy/dx = y&lt;/li&gt;
+&lt;li&gt;(x^2+x)/dx = 2x+1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;type&quot;&gt;&lt;a href=&quot;#type&quot; aria-label=&quot;type permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;type&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;deriv : &amp;#x3C; expr &gt;  &amp;#x3C; var &gt; =&gt; &amp;#x3C; expr &gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;#x3C; expr &gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“x” =&gt; Var x&lt;/li&gt;
+&lt;li&gt;“3” =&gt; Number 3&lt;/li&gt;
+&lt;li&gt;“x + 3” =&gt; Add ..&lt;/li&gt;
+&lt;li&gt;“5 * y” = &gt; Mul ..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;  type Expr =
+    | Number of int
+    | Var of string
+    | Add of Expr * Expr
+    | Mul of Expr * Expr&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Type(1)]]></title><description><![CDATA[Type(1) 값들의 집함; 모든 value는 타입을 가지고 있고, procedure 또한 그렇다 Types : compound data Scheme Pair List Rat(유리수) 7을 설명하면? 7을 7명, 7개, 7mm, 7pt…]]></description><link>http://kkyeongin.github.io/SICP/Type-1/</link><guid isPermaLink="false">http://kkyeongin.github.io/SICP/Type-1/</guid><pubDate>Wed, 20 Feb 2019 18:02:47 GMT</pubDate><content:encoded>&lt;h1 id=&quot;type1&quot;&gt;&lt;a href=&quot;#type1&quot; aria-label=&quot;type1 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Type(1)&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;값들의 집함; 모든 value는 타입을 가지고 있고, procedure 또한 그렇다&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Types : compound data&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scheme&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pair&lt;/li&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;li&gt;Rat(유리수)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;7을-설명하면&quot;&gt;&lt;a href=&quot;#7%EC%9D%84-%EC%84%A4%EB%AA%85%ED%95%98%EB%A9%B4&quot; aria-label=&quot;7을 설명하면 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7을 설명하면?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;7을 7명, 7개, 7mm, 7pt 등등 여러 의미를 다룰 수 있음&lt;/li&gt;
+&lt;li&gt;7 자체는 abstraction임을 뜻함&lt;/li&gt;
+&lt;li&gt;그래서 type을 정확히 얘기해 줘야함.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;;; 1,2,3 ... ,10, ACE = 11, TEEAN = 12, LOAD = 13&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;여기서 이렇게 정의 되어 있을때 처리값이 1이나, 15가 들어온다면
+에러를 내는 주범이 될 것 이다.&lt;/p&gt;
+&lt;h2 id=&quot;function-type&quot;&gt;&lt;a href=&quot;#function-type&quot; aria-label=&quot;function type permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function Type&lt;/h2&gt;
+&lt;h3 id=&quot;ex&quot;&gt;&lt;a href=&quot;#ex&quot; aria-label=&quot;ex permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ex&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;lambda (a b c) (if (&gt; a 0)(+ b c)(- b c)))&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;number * number * number -&gt; number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lambda (p) (if (p) “hi” “bye”))&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;number -&gt; string&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;curried-function&quot;&gt;&lt;a href=&quot;#curried-function&quot; aria-label=&quot;curried function permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;curried function&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ex, int -&gt; int -&gt; int&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;let add a b = a + b
+
+let incr = add 1
+
+; incr 2
+; 3
+; incr 3
+; 4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;프로시저를 한번 정의하고 재사용성을 높임&lt;/p&gt;
+&lt;h2 id=&quot;user-defined-types&quot;&gt;&lt;a href=&quot;#user-defined-types&quot; aria-label=&quot;user defined types permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;User defined types&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Record&lt;/li&gt;
+&lt;li&gt;Union&lt;/li&gt;
+&lt;li&gt;Polymorphosm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;record&quot;&gt;&lt;a href=&quot;#record&quot; aria-label=&quot;record permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Record&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AND Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;type Person = {
+    Name: string
+    Aag: int
+}
+
+let p = (&amp;quot;kyeongin&amp;quot;, 28) ; 두개를 동시에 줘야해서 And Type
+; val p : string * int
+
+let p2 = {
+    Name = &amp;quot;Kyeongin&amp;quot;
+    Age = 28
+}
+; val p2 : Person = {Name = &amp;quot;Kyeongin&amp;quot;, Age = 28}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Selector가 필요 없음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;union&quot;&gt;&lt;a href=&quot;#union&quot; aria-label=&quot;union permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Union&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;OR Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;type Gender =
+    | Male
+    | Female
+
+type Color
+    | Red
+    | Green
+    | Blue&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Red의 Type은 Color&lt;/p&gt;
+&lt;h2 id=&quot;polymorphosm&quot;&gt;&lt;a href=&quot;#polymorphosm&quot; aria-label=&quot;polymorphosm permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Polymorphosm&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;let head ls = 
+    match ls with
+    | x :: xs -&amp;gt; x
+    | _ -&amp;gt; fallwith &amp;quot;head error&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;그래서-list의-type은&quot;&gt;&lt;a href=&quot;#%EA%B7%B8%EB%9E%98%EC%84%9C-list%EC%9D%98-type%EC%9D%80&quot; aria-label=&quot;그래서 list의 type은 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;그래서 list의 type은?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;‘a list -&gt; ‘a&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;‘a를 type variable 이라고 표현함.
+‘a의 type에 따라서 list의 type이 변하며, 무엇이 오던 간에 같은 동작을 함.&lt;/p&gt;
+&lt;h3 id=&quot;정리&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EB%A6%AC&quot; aria-label=&quot;정리 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정리&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[Type(2)]]></title><description><![CDATA[Type2 type of procedure input type number order type of result (->) Advanced in Types AND type ; product type(곱셈) Tuple Record OR type ; add…]]></description><link>http://kkyeongin.github.io/SICP/Type-2/</link><guid isPermaLink="false">http://kkyeongin.github.io/SICP/Type-2/</guid><pubDate>Wed, 20 Feb 2019 18:02:47 GMT</pubDate><content:encoded>&lt;h1 id=&quot;type2&quot;&gt;&lt;a href=&quot;#type2&quot; aria-label=&quot;type2 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Type2&lt;/h1&gt;
+&lt;h2 id=&quot;type-of-procedure&quot;&gt;&lt;a href=&quot;#type-of-procedure&quot; aria-label=&quot;type of procedure permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;type of procedure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;input&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;type&lt;/li&gt;
+&lt;li&gt;number&lt;/li&gt;
+&lt;li&gt;order&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;type of result (-&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;let sum (a+b) = a+b
+; int * int -&amp;gt; int&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;advanced-in-types&quot;&gt;&lt;a href=&quot;#advanced-in-types&quot; aria-label=&quot;advanced in types permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Advanced in Types&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;AND type ; product type(곱셈)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tuple&lt;/li&gt;
+&lt;li&gt;Record&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OR type ; add type adition&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;li&gt;Option&lt;/li&gt;
+&lt;li&gt;Union&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;enviroment-table&quot;&gt;&lt;a href=&quot;#enviroment-table&quot; aria-label=&quot;enviroment table permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;enviroment table&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;에 넣는 걸을 variable binding 으로 표현 한다. 우리가 흔히 아는 stack이랑 같은 공간이라 생각하면 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;curring&quot;&gt;&lt;a href=&quot;#curring&quot; aria-label=&quot;curring permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;curring&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;let add x y = x + y
+; curring
+; add = lambda x (lambda y ( x + y ))
+let incr = add 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;recursive-type&quot;&gt;&lt;a href=&quot;#recursive-type&quot; aria-label=&quot;recursive type permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Recursive type&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;type(or | and) 안에 type(or | and) 이 올 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;type Natural =
+| Zero
+| Succ of Natural&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;tree&quot;&gt;&lt;a href=&quot;#tree&quot; aria-label=&quot;tree permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tree&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;module Tree
+
+; OR Type * AND Type
+type &amp;#39;a Tree =
+    | Leaf
+    | Node of &amp;#39;a Tree * &amp;#39;a * &amp;#39;a Tree 
+
+let a = Leaf
+let b = Node(Node(Leaf, 2, Leaf), 1, Leaf)
+let c = Node(Leaf, 1, Node(Leaf, 2, Leaf))
+
+let rec sum tree =
+    match tree with
+    | Leaf -&amp;gt; 0
+    | Node (x, i, y) -&amp;gt; sum x + i + sum y&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;operator&quot;&gt;&lt;a href=&quot;#operator&quot; aria-label=&quot;operator permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Operator&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Operator 와 Procedure는 거의 같다. (prefix 말고)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;fs&quot;&gt;&lt;pre class=&quot;language-fs&quot;&gt;&lt;code class=&quot;language-fs&quot;&gt;module Operator
+
+let (++) a b =  a+b
+; (++) a b
+; a ++ b
+let foo = (++) 3 ; curring
+; (++) type: int -&amp;gt; int -&amp;gt; int
+; foo type: int -&amp;gt; int&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Type(3)]]></title><description><![CDATA[Type_3 모든 value는 type을 가지고 있다. Advanced in types PRODUCT type (AND type) Record SUM type (OR type) Union   inheritance]]></description><link>http://kkyeongin.github.io/SICP/Type-3/</link><guid isPermaLink="false">http://kkyeongin.github.io/SICP/Type-3/</guid><pubDate>Wed, 20 Feb 2019 18:02:47 GMT</pubDate><content:encoded>&lt;h1 id=&quot;type_3&quot;&gt;&lt;a href=&quot;#type_3&quot; aria-label=&quot;type_3 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Type_3&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;모든 value는 type을 가지고 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;advanced-in-types&quot;&gt;&lt;a href=&quot;#advanced-in-types&quot; aria-label=&quot;advanced in types permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Advanced in types&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;PRODUCT type (AND type)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Record&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SUM type (OR type)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Union  &lt;/li&gt;
+&lt;li&gt;inheritance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[abstraction]]></title><description><![CDATA[abstraction object to descibe to capture computational porcess procedure abstraction Lambda eager eval - 값을 바로 evaluation lazy eval…]]></description><link>http://kkyeongin.github.io/SICP/abstraction/</link><guid isPermaLink="false">http://kkyeongin.github.io/SICP/abstraction/</guid><pubDate>Wed, 20 Feb 2019 18:02:47 GMT</pubDate><content:encoded>&lt;h1 id=&quot;abstraction&quot;&gt;&lt;a href=&quot;#abstraction&quot; aria-label=&quot;abstraction permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;abstraction&lt;/h1&gt;
+&lt;h2 id=&quot;object&quot;&gt;&lt;a href=&quot;#object&quot; aria-label=&quot;object permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;object&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;to descibe&lt;/li&gt;
+&lt;li&gt;to capture computational porcess&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;procedure-abstraction&quot;&gt;&lt;a href=&quot;#procedure-abstraction&quot; aria-label=&quot;procedure abstraction permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;procedure abstraction&lt;/h2&gt;
+&lt;h3 id=&quot;lambda&quot;&gt;&lt;a href=&quot;#lambda&quot; aria-label=&quot;lambda permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lambda&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;lisp&quot;&gt;&lt;pre class=&quot;language-lisp&quot;&gt;&lt;code class=&quot;language-lisp&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;;lambda expression&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;;keyword (argument) (body)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token lambda&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token arguments&quot;&gt;&lt;span class=&quot;token argument variable&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token car&quot;&gt;*&lt;/span&gt; x x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;eager eval - 값을 바로 evaluation&lt;/li&gt;
+&lt;li&gt;lazy eval - 우선 집어 넣고 나중에 evaluation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;procedure(do work) -  common pattern을 찾아서 사용&lt;/p&gt;
+&lt;h3 id=&quot;abstracting-the-process&quot;&gt;&lt;a href=&quot;#abstracting-the-process&quot; aria-label=&quot;abstracting the process permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;abstracting the process&lt;/h3&gt;
+&lt;p&gt;why this modularity?
+abstraction : 구현과 사용을 분리하는 것 &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Singleton Pattern]]></title><description><![CDATA[싱글턴 패턴 singleton.png 디자인 패턴이란 무엇인가? 어떤 상황의 문제에 대한 해법 패턴의 4가지 요소 이름 문제 해법 설계를 구성하는 요소들과 그 요소들 간과 관계, 책임, 그리고 협력 관계 결과 (장, 단점) Singleton…]]></description><link>http://kkyeongin.github.io/Design-Patterns/singleton-pattern/</link><guid isPermaLink="false">http://kkyeongin.github.io/Design-Patterns/singleton-pattern/</guid><pubDate>Tue, 19 Feb 2019 20:03:35 GMT</pubDate><content:encoded>&lt;h1 id=&quot;싱글턴-패턴&quot;&gt;&lt;a href=&quot;#%EC%8B%B1%EA%B8%80%ED%84%B4-%ED%8C%A8%ED%84%B4&quot; aria-label=&quot;싱글턴 패턴 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;싱글턴 패턴&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://realzero0.github.io/assets/img/singletonpattern.png&quot; alt=&quot;singleton.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;디자인-패턴이란-무엇인가&quot;&gt;&lt;a href=&quot;#%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;디자인 패턴이란 무엇인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;디자인 패턴이란 무엇인가?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;어떤 상황의 문제에 대한 해법&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;패턴의 4가지 요소&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;이름&lt;/li&gt;
+&lt;li&gt;문제&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;해법&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;설계를 구성하는 요소들과 그 요소들 간과 관계, 책임, 그리고 협력 관계&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;결과 (장, 단점)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;singleton단일체&quot;&gt;&lt;a href=&quot;#singleton%EB%8B%A8%EC%9D%BC%EC%B2%B4&quot; aria-label=&quot;singleton단일체 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Singleton(단일체)&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;어떤 클래스의 인스턴스는 오직 하나임을 보장하며, 이 인스턴스에 접근할 수 있는 전역적인 접촉점을 제공하는 패턴&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;시스템 관리자, 윈도우 관리자 오직 하나여야 하듯이 클래스 자신이 자기의 유일한 인스턴스로 접근하여 자체적으로 관리한다.&lt;/p&gt;
+&lt;p&gt;이 클래스는 또 다른 인스턴스가 생성되지 않도록 할 수 있고, 클래스가 인스턴스에 대한 접근 방법을 제공할 수 있다.&lt;/p&gt;
+&lt;h3 id=&quot;장점&quot;&gt;&lt;a href=&quot;#%EC%9E%A5%EC%A0%90&quot; aria-label=&quot;장점 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;장점&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;유일한 인스턴스의 접근 제어 가능&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;연산 및 표현의 정제 허용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;싱글턴 클래스를 상속하여 서브클래스를 통해 새로운 인스턴스를 만들 수 있다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;싱글톤으로 만들어진 클래스의 인스턴스는 전역 인스턴스이기 때문에 다른 클래스의 인스턴스들이 데이터를 공유하기 쉽다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Singleton&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; Sington&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Instance&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;protected&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;Singleton&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 생성자의 외부 접근을 차단함&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; Sigleton&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; instance_&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+
+Singleton&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; Singleton&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;instance_ &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+Singleton&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; Singleton&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;Instance &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_instance &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        _instance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; Singleton&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; _instance&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;ex-thread-safe-singleton&quot;&gt;&lt;a href=&quot;#ex-thread-safe-singleton&quot; aria-label=&quot;ex thread safe singleton permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ex. Thread Safe Singleton&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ThreadSafeSingleton&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ThreadSafeSingleton&lt;/span&gt; instance&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ThreadSafeSingleton&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;synchronized&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ThreadSafeSingleton&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;instance &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            instance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ThreadSafeSingleton&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; instance&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;synchronized 때문에 메소드에 접근을 쓰레드가 동시 접근이 안돼, thread-safe 할 수 있다. 하지만 쓰레드들의 getInstance() method 를 호출하게 되면 높은 cost 비용으로 인해 프로그램 전반에 성능저하가 일어난다.&lt;/p&gt;
+&lt;h3 id=&quot;ex-enum-singleton&quot;&gt;&lt;a href=&quot;#ex-enum-singleton&quot; aria-label=&quot;ex enum singleton permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ex. Enum Singleton&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;EnumSingleton&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    INSTANCE&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//do something&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;enum은 전역 접근이 가능해, 싱글턴 객체 역시 접근 가능 하다.
+단점으로는 enum type은 값변경이 불가능해 lazy initialization이 허용이 안된다.&lt;/p&gt;
+&lt;h3 id=&quot;ex-serialization-and-singleton&quot;&gt;&lt;a href=&quot;#ex-serialization-and-singleton&quot; aria-label=&quot;ex serialization and singleton permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ex. Serialization and Singleton&lt;/h3&gt;
+&lt;p&gt;분산 시스템에서 Singleton 클래스에 Serializable 인터페이스를 구현하여, 파일 시스템에 상태를 저장하고 나중에 검색 할 수 있도록 해야 한다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;io&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Serializable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SerializedSingleton&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Serializable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;long&lt;/span&gt; serialVersionUID &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;7604766932017737115L&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SerializedSingleton&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SingletonHelper&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SerializedSingleton&lt;/span&gt; instance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SerializedSingleton&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SerializedSingleton&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SingletonHelper&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;instance&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;문제점은 역 직렬화 할 때마다 클래스의 새로운 인스턴스를 생성한다는 것이다.&lt;/p&gt;
+&lt;h3 id=&quot;ex-initialization-on-demand-holder-idiom&quot;&gt;&lt;a href=&quot;#ex-initialization-on-demand-holder-idiom&quot; aria-label=&quot;ex initialization on demand holder idiom permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ex. initialization on demand holder idiom&lt;/h3&gt;
+&lt;p&gt;미국 메릴랜드 대학의 컴퓨터 과학 연구원인 Bill pugh 가 기존의 java singleton pattern이 가지고 있는 문제들을 해결 하기 위해 새로운 singleton pattern을 제시하였다. Initialization on demand holder idiom기법이다. 이것은 jvm 의 class loader의 매커니즘과 class의 load 시점을 이용하여 내부 class를 생성시킴으로 thread 간의 동기화 문제를 해결한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InitializationOnDemandHolderIdiom&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	
+	&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InitializationOnDemandHolderIdiom&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Singleton&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InitializationOnDemandHolderIdiom&lt;/span&gt; instance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InitializationOnDemandHolderIdiom&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InitializationOnDemandHolderIdiom&lt;/span&gt; getInstance &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;create instance&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Singleton&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;instance&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt; lazy initialization이 가능하며 모든 java 버젼과, jvm에서 사용이 가능하다. 현재 java 에서 singleton 을 생성시킨다고 하면 거의 위의 방법을 사용한다고 보면 된다.&lt;/p&gt;
+&lt;h3 id=&quot;참고&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0&quot; aria-label=&quot;참고 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples#thread-safe-singleton&quot;&gt;Java Singleton Design Pattern Best Practices with Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;%5Bhttps://jeong-pro.tistory.com/86%5D(https://blog.seotory.com/post/2016/03/java-singleton-pattern)&quot;&gt;seotory님의 블로그(싱글턴 패턴)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://realzero0.github.io/study/2017/06/12/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-%EC%A0%95%EB%A6%AC.html&quot;&gt;singleton diagram picture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[How to Summarize Procedure]]></title><description><![CDATA[프로시저를 써서 요약하는 방법 목차 프로그램을 짤 때 바탕이 되는 것 Procedure vs Process higher-order procedure…]]></description><link>http://kkyeongin.github.io/SICP/how-to-summarize-procedure/</link><guid isPermaLink="false">http://kkyeongin.github.io/SICP/how-to-summarize-procedure/</guid><pubDate>Tue, 19 Feb 2019 18:03:29 GMT</pubDate><content:encoded>&lt;h1 id=&quot;프로시저를-써서-요약하는-방법&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80%EB%A5%BC-%EC%8D%A8%EC%84%9C-%EC%9A%94%EC%95%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;프로시저를 써서 요약하는 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로시저를 써서 요약하는 방법&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;목차&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%A7%A4-%EB%95%8C-%EB%B0%94%ED%83%95%EC%9D%B4-%EB%90%98%EB%8A%94-%EA%B2%83&quot;&gt;프로그램을 짤 때 바탕이 되는 것&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Procedure-vs-Process&quot;&gt;Procedure vs Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#higher-order-procedure%EB%A1%9C-%EC%9A%94%EC%95%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95&quot;&gt;higher-order procedure로 요약하는 방법&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;프로그램-짤-때-바탕이-되는-것&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%A7%A4-%EB%95%8C-%EB%B0%94%ED%83%95%EC%9D%B4-%EB%90%98%EB%8A%94-%EA%B2%83&quot; aria-label=&quot;프로그램 짤 때 바탕이 되는 것 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로그램 짤 때 바탕이 되는 것&lt;/h2&gt;
+&lt;p&gt;좋은 프로그래밍은 내 생각을 짜임새 깊게 나타내는 것이다.
+그 중 가장 기본이 되는 것이 아래 3개 이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;primitive expression&lt;/li&gt;
+&lt;li&gt;means of combination&lt;/li&gt;
+&lt;li&gt;means of abstracion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;좋은 프로그래밍 언어에는 primitive data &amp;#x26; primitive procedure를 나타내고, 잘 조합하여, 추상화 시켜야 한다.&lt;/p&gt;
+&lt;h2 id=&quot;procedure-vs-process&quot;&gt;&lt;a href=&quot;#procedure-vs-process&quot; aria-label=&quot;procedure vs process permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Procedure vs Process&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;프로시저란, 한 컴퓨터 프로세스가 어떻게 나아가는지(local evolution of a computer process), 곧 지난일을 발판 삼아 다음으로 해야 할 일을 밝힌 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;how-do-we-create-expressions-using-these-precedures&quot;&gt;&lt;a href=&quot;#how-do-we-create-expressions-using-these-precedures&quot; aria-label=&quot;how do we create expressions using these precedures permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How do we create expressions using these precedures?&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;___ close parenthesis
+&lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;___ other expressions
+&lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt;____ an expression whose value is a procedure
+&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;____ open parenthesis
+  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What about the semantics of a combination?&lt;/p&gt;
+&lt;p&gt;sub-expression을 평가하고, 첫 번째 표현식의 값을 다른 표현식의 값에 적용합니다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;위와 같은 복합식(combination expression)은 어떻게 계산 해야 하나?&lt;/p&gt;
+&lt;p&gt;위에서 (+ 2 3)식을 풀었고 같은 패턴의 복합식이므로 같은 방법으로 처리하면 된다.
+이걸 보통 recursive(재귀) 프로세스 라고 한다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;abstraction&quot;&gt;&lt;a href=&quot;#abstraction&quot; aria-label=&quot;abstraction permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;abstraction&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;식에 이름 부여&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;define score &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;special form&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;for, while 반목문 같은 경우 special form(특별한 형태)를 가진다.
+위에서 (+ 2 3)식을 풀었고 같은 패턴의 복합식이므로 같은 방법으로 처리하면 된다.
+이걸 보통 recursive(재귀) 프로세스 라고 한다.&lt;/p&gt;
+&lt;p&gt;프로시저란, 한 컴퓨터 프로세스가 어떻게 나아가는지(local evolution of a computer process), 곧 지난일을 발판 삼아 다음으로 해야 할 일을 밝힌 것이다. &lt;/p&gt;
+&lt;h2 id=&quot;higher-order-procedure로-요약하는-방법&quot;&gt;&lt;a href=&quot;#higher-order-procedure%EB%A1%9C-%EC%9A%94%EC%95%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;higher order procedure로 요약하는 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;higher-order procedure로 요약하는 방법&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;어떻게 추상화를 잘 하는 방법&lt;/li&gt;
+&lt;li&gt;식에 이름을 정하는 것&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;define score &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;special form&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Git Page+Docker+Jenkins(2)]]></title><description><![CDATA[why docker 블로그 만들기(2) 참고]]></description><link>http://kkyeongin.github.io/DevOps/git-page-+-gastby-+-jenkins를-활용하여-blog-만들기 copy/</link><guid isPermaLink="false">http://kkyeongin.github.io/DevOps/git-page-+-gastby-+-jenkins를-활용하여-blog-만들기 copy/</guid><pubDate>Wed, 13 Feb 2019 19:02:02 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-and-vm-transparent-bg.png&quot; alt=&quot;why docker&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;블로그-만들기2&quot;&gt;&lt;a href=&quot;#%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B02&quot; aria-label=&quot;블로그 만들기2 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;블로그 만들기(2)&lt;/h2&gt;
+&lt;h3 id=&quot;참고&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0&quot; aria-label=&quot;참고 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[Git Page+Docker+Jenkins]]></title><description><![CDATA[블로그 만들기(1) 이전에 몇번 git blog를 만들어 보려 hexo 를 사용했었다. 목차 Why Gatsby? Setup Git page Setup Jenkins for GitHub repository Configure to build…]]></description><link>http://kkyeongin.github.io/DevOps/git-page-+-gastby-+-jenkins를-활용하여-blog-만들기/</link><guid isPermaLink="false">http://kkyeongin.github.io/DevOps/git-page-+-gastby-+-jenkins를-활용하여-blog-만들기/</guid><pubDate>Tue, 12 Feb 2019 19:02:02 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 81.73076923076923%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe/mig//xAAWEAADAAAAAAAAAAAAAAAAAAAAASD/2gAIAQEAAQUCFP8A/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAACAh/9oACAEBAAY/AiL/AP/EABkQAAIDAQAAAAAAAAAAAAAAAAEQABEhYf/aAAgBAQABPyGU3pgr/9oADAMBAAIAAwAAABAkD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQEAAgMBAAAAAAAAAAAAAAERACEQMUFR/9oACAEBAAE/EJ21y4NIhn0wyhlLpN+nH//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Alt text&quot;
+        title=&quot;Alt text&quot;
+        src=&quot;/static/31eda11e55a250b570898220b2b294e3/c739e/gatsby_how_to_work.jpg&quot;
+        srcset=&quot;/static/31eda11e55a250b570898220b2b294e3/8ee9c/gatsby_how_to_work.jpg 148w,
+/static/31eda11e55a250b570898220b2b294e3/ebbe7/gatsby_how_to_work.jpg 295w,
+/static/31eda11e55a250b570898220b2b294e3/c739e/gatsby_how_to_work.jpg 590w,
+/static/31eda11e55a250b570898220b2b294e3/5413e/gatsby_how_to_work.jpg 885w,
+/static/31eda11e55a250b570898220b2b294e3/33ef5/gatsby_how_to_work.jpg 936w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;블로그-만들기1&quot;&gt;&lt;a href=&quot;#%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B01&quot; aria-label=&quot;블로그 만들기1 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;블로그 만들기(1)&lt;/h2&gt;
+&lt;p&gt;이전에 몇번 git blog를 만들어 보려 hexo 를 사용했었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;목차&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why Gatsby?&lt;/li&gt;
+&lt;li&gt;Setup Git page&lt;/li&gt;
+&lt;li&gt;Setup Jenkins for GitHub repository&lt;/li&gt;
+&lt;li&gt;Configure to build automatically when it is pushed to GitHub&lt;/li&gt;
+&lt;li&gt;Review&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;why-gatsby&quot;&gt;&lt;a href=&quot;#why-gatsby&quot; aria-label=&quot;why gatsby permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why Gatsby&lt;/h3&gt;
+&lt;p&gt;Gatsby는 Static Site Generator 이다.
+Jekyll &amp;#x26; Hexo 또한 같은 정적 사이트 생성기이며 처음에는 Hexo를 이용해서 블로그를 만들었었다.
+Jekyll 은 Ruby on Rails 기반이며, Hexo는 Node.js기반이여서 나는 고치기 쉬울것 같은 Hexo를 선택해서 사용하였다.
+사용하던 중 프론트엔드 쪽 지식이 별로 없어 Hexo theme가 맘에 안들어도 꾸역꾸역 쓰고 있었는데..
+그 와중에 맘에 드는 템플릿(&lt;a href=&quot;https://gatsby-starter-bee.netlify.com/&quot;&gt;https://gatsby-starter-bee.netlify.com/&lt;/a&gt;)을 만나 바꾸게 되었다.&lt;/p&gt;
+&lt;h3 id=&quot;setup-git-page&quot;&gt;&lt;a href=&quot;#setup-git-page&quot; aria-label=&quot;setup git page permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup Git page&lt;/h3&gt;
+&lt;p&gt;우선 git page(&lt;a href=&quot;https://pages.github.com/&quot;&gt;https://pages.github.com/&lt;/a&gt;) 설정은 github에서 repo를 만들고 Repository name 을 [username].github.io로 설정해 주면 된다.&lt;/p&gt;
+&lt;h3 id=&quot;setup-jenkins-for-github-repository&quot;&gt;&lt;a href=&quot;#setup-jenkins-for-github-repository&quot; aria-label=&quot;setup jenkins for github repository permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup Jenkins for GitHub repository&lt;/h3&gt;
+&lt;p&gt;OS : ubuntu:18.04
+Docker : 18.09.7&lt;/p&gt;
+&lt;p&gt;Docker를 사용한 이유는 AWS를 EC2서버를 사용하다 바꾸는 경우가 가끔 있었고 다양한 환경의 서버들을 다루기 꺼려져 Docker를 사용하였습니다. Docker의 경우 설치하고 한번 사용한 이미지 그대로 가져와서 사용하면 되서 환경에 영향을 받지 않죠.
+삽질을 줄일 수 있다는 점이나 안정성에서 만족하며 사용하고 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# Docker CE (Community Edition) install
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+OK&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;apt-transport-https: 패키지 관리자가 https를 통해 파일 및 데이터를 전송할 수 있도록합니다.&lt;/li&gt;
+&lt;li&gt;ca-certificates: 시스템 및 웹 브라우저가 보안 인증서를 확인할 수 있도록합니다.&lt;/li&gt;
+&lt;li&gt;curl: ftp 같이 웹에서 데이터를 받아올 수 있습니다.&lt;/li&gt;
+&lt;li&gt;software-properties-common: software managent 를 위해 script를 추가하는 api&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.docker.com/v17.09/engine/installation/linux/docker-ce/ubuntu/#set-up-the-repository&quot;&gt;다른 repositories에 관한 정보&lt;/a&gt; 를 확인한 수 받으시면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo add-apt-repository &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable&amp;quot;
+
+sudo apt-get update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo apt-get install docker-ce   # Docker CE (Community Edition)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;확인을 위해&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;docker --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;참고&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0&quot; aria-label=&quot;참고 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.docker.com/install/&quot;&gt;https://docs.docker.com/install/&lt;/a&gt;
+&lt;a href=&quot;https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04&quot;&gt;https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Welcome Bee starter]]></title><description><![CDATA[Welcome, Gatsby! This starter is full-package for your new blog! 1. Support Three frontmatter title date category 2. Code highlighting With…]]></description><link>http://kkyeongin.github.io/Hi-Blog/hello/</link><guid isPermaLink="false">http://kkyeongin.github.io/Hi-Blog/hello/</guid><pubDate>Wed, 06 Feb 2019 16:21:13 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 466px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 95.70815450643778%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAADIklEQVQ4y21UZ09UQRR9v0Jjib3E2Hv5YoyJGk0MgmIBFRCkaCIawYISTNQEF6RIBwVZFKQYmkGagJGioIIUwYgYQJpIXZa2u8d3L77He7g3mbzZ2Zkz59x75gr4FyaTiYc0NxqMMBpNmBmGyel15RkpBCUgBW1WbhrTT2CoTw/dwKhqnS5UEpABlbfQJimqS34ixD0H7nvicG59OJy3ROK2ZRLSgivQ2zE0BWQ0/QcqzAQjNoEXX+HoPH8GCnDLRpKmFHE+RfCySMSx+f5w2hSBktR6s6kSJJkUw/2jzIIOpQSUs8w/ncNo/tKF1qZejAyN4UdtN24efg7LOX7Iif2sks+AyhtCLr9mZmXZTRgdmUC4Rx5LtV0ejLOrQnB1XzxKMxqZgL9zFk4tDUJDRZtKoSBNvr5vZ2bae28xMW6Ax34tTi4OZHnOW6MY2H5tGE4sCkBqUAUe3yrE8YUB8LVPV0mXAWO8CvkAyQ6/mstgbjtjcH5zpDwI1HV7NOxWh8JhXRhctkXBaWMEWup7ZIcIkrd8rJP5QF/XMIpT6nF65aMpIHGNWNLcUTxsuyKY/6NhtyaUv7RfwmFASvb1Q8/4VsoT/S5Ja+DcScwcN4Tjwq4YRN0o4Io/8X6DINENNsuCkB39UQ04PjrJQL4O6ewztx3R0A+Py6AEeE4EvLL3KRorf7FE3eAYV/7kkkDkaWumASXLUNWIAUWS5h3nT68bZzkSUxokn4r3Ifc7SjMbeV5X1ipXWiBUCjpI3pLyEX+3hC8gUJmpWG1idP/MS34l3lYvcGl3LMZEi8nGljxIi2QVqmJ36wCvaUVQV1H+iCiPXgaB+TpksK0ob0dma2RzG/6ZW1Casr68jatGufr2qYPX0kM/cH77e3T43T7Ihs+MqITVXD9onDJVncfsW64qaGZ70Ct4JDaHqvxm3DmegmsHE5CfUMNfi1kP4O+SxYVTPl2VZPpIoJ0t/Yj0zOfmYL3gIRvZRswhvQzPA1oUJtaq2piK4cx+pmxhfd06VBe3oCi5jitKTWJywjC910yjFcx1bNporlvLXXtGc1US+gtbe+VlgtA+ywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;hello&quot;
+        title=&quot;hello&quot;
+        src=&quot;/static/31955aadfaea1bcef76bb662347d1af4/101aa/hello.png&quot;
+        srcset=&quot;/static/31955aadfaea1bcef76bb662347d1af4/cf440/hello.png 148w,
+/static/31955aadfaea1bcef76bb662347d1af4/d2d38/hello.png 295w,
+/static/31955aadfaea1bcef76bb662347d1af4/101aa/hello.png 466w&quot;
+        sizes=&quot;(max-width: 466px) 100vw, 466px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Welcome, Gatsby! This starter is full-package for your new blog!&lt;/p&gt;
+&lt;h2 id=&quot;1-support-three-frontmatter&quot;&gt;&lt;a href=&quot;#1-support-three-frontmatter&quot; aria-label=&quot;1 support three frontmatter permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Support Three frontmatter&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---
+title: &amp;#39;Welcome Bee starter&amp;#39;
+date: 2019-2-6 16:21:13
+category: &amp;#39;development&amp;#39;
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;title&lt;/li&gt;
+&lt;li&gt;date&lt;/li&gt;
+&lt;li&gt;category&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;2-code-highlighting&quot;&gt;&lt;a href=&quot;#2-code-highlighting&quot; aria-label=&quot;2 code highlighting permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Code highlighting&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;With &lt;a href=&quot;https://github.com/tonsky/FiraCode&quot;&gt;Fira Code&lt;/a&gt; font&lt;/li&gt;
+&lt;li&gt;Support highlighting with &lt;a href=&quot;https://github.com/PrismJS/prism&quot;&gt;prism&lt;/a&gt;
+2-1. Use inline highlighting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight has-highlighted-lines&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;TEMPLATE&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;gatsby-starter-bee&apos;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Component&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function-variable function&quot;&gt;handleClick&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;val &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;bar&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;val &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;zoo&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;clicked&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Welcome&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Gatsby&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; $&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;TEMPLATE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;code&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 104.97131931166348%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAAC4UlEQVQ4y52UbU/TUBiG91cQ2Lq163t72vVlZWPjxRBjYvwNSqK/ARL9ZmIUEzXKhwEjgEGDBgyIyO/ah90+z+lwQwcRPtw97cnp1ft5a+Hw+0nv5PSsd3p23vvx89ctdd47JgazCodHx/iwvoEXL99i7dV7rK2R3txMr1+/w8f1DgiIwt7ng/6D9v3+w8jsG023ryhuv1IklVjOH5WL46XS+ekJoz/bWOrvf/naL2x2dzBbX4RRMqEZAsq0LVWSq0OrI1eCggD/iD6M6Tsm6skctrZ3UOhsdjGTLcA1QkTuDKKgDVuPENg12FWBwBSwNV+CGaCMgFiq4qE4aSKN59DZ3GbgNhr1BfjkzjVrCMUsBIFdowaLQKEVwNUFTNWHQTJVD3rZuwT9C9hFM1uEo3nwrAhx2EZNtGBWCag6qNkBBLkMLQ/C8BDRs6eLQRrGAnOHgtxFfgue3UTkJEhFgkRkSPyYQk/hGPRRYx5aOZJhM6h8FZATaqox6uE9gt5F7LURUg5baRuxG0GvBAQKUSVxzvICuVc7zNJ5TE3osKo+2kmGTMRwqCBu1ZN50wiiKqPVZXfD4owFcukdnVxFGVU7hqB8unoIW3UJ7MuiqYrIQx0pyLVAQwtkqNxC1bIPldtCtoabuxoBXVPlITAL6mjUUvhWSuE3yaGP2All61RKw1b5L4fFSQvCjlBzItnQefJzh5VrxO7HVHkelaINUxMytNJg5EqXRjBfuWVKU7YUjyifn5oYAW7QJaW20ahqS40W6hS2zxNDuYyoZUJy7eiBdO6bIU1PgLpISQmNJ40opcOqOONCtqGr+YixOGwGsQzad42A9vJ73rt45nPVkn159LJ0QYbAOVEGf5dLKg7/Onw/+hfKQzaQRO1ByFs0ejTLnNiLQoyVclVRPDJjSlPMKuzu7WNl9TmWl5/i0eMntxK/u7L6DDvEKhx8O8Lup31J72x0wSm4kegdfpcZzPoN0agnefU0/LsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;code example&quot;
+        title=&quot;code example&quot;
+        src=&quot;/static/14a95f9ea1a2560a874efa82ad7db24f/b9e4f/code_example.png&quot;
+        srcset=&quot;/static/14a95f9ea1a2560a874efa82ad7db24f/cf440/code_example.png 148w,
+/static/14a95f9ea1a2560a874efa82ad7db24f/d2d38/code_example.png 295w,
+/static/14a95f9ea1a2560a874efa82ad7db24f/b9e4f/code_example.png 590w,
+/static/14a95f9ea1a2560a874efa82ad7db24f/f9b6a/code_example.png 885w,
+/static/14a95f9ea1a2560a874efa82ad7db24f/88de3/code_example.png 1046w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-support-markdown-h2&quot;&gt;&lt;a href=&quot;#3-support-markdown-h2&quot; aria-label=&quot;3 support markdown h2 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Support Markdown (h2)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;With &lt;a href=&quot;https://fonts.google.com/specimen/Noto+Sans&quot;&gt;Noto Sans&lt;/a&gt; font&lt;/li&gt;
+&lt;li&gt;Support header anchoring&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;h3&quot;&gt;&lt;a href=&quot;#h3&quot; aria-label=&quot;h3 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;h3&lt;/h3&gt;
+&lt;h4 id=&quot;h4&quot;&gt;&lt;a href=&quot;#h4&quot; aria-label=&quot;h4 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;h4&lt;/h4&gt;
+&lt;h5 id=&quot;h5&quot;&gt;&lt;a href=&quot;#h5&quot; aria-label=&quot;h5 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;h5&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;quote!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;4-support-emoji-&quot;&gt;&lt;a href=&quot;#4-support-emoji-&quot; aria-label=&quot;4 support emoji  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Support emoji 🚀&lt;/h2&gt;
+&lt;p&gt;Based on &lt;a href=&quot;https://github.com/emojione/emojione&quot;&gt;emojione&lt;/a&gt; 🙏&lt;/p&gt;
+&lt;h2 id=&quot;5-support-lightdark-mode&quot;&gt;&lt;a href=&quot;#5-support-lightdark-mode&quot; aria-label=&quot;5 support lightdark mode permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. Support light/dark mode&lt;/h2&gt;
+&lt;h2 id=&quot;6-support-social-sharing-feature&quot;&gt;&lt;a href=&quot;#6-support-social-sharing-feature&quot; aria-label=&quot;6 support social sharing feature permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. Support social sharing feature&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Twitter&lt;/li&gt;
+&lt;li&gt;Facebook&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;bonus-code-classlanguage-textbuy-me-a-coffeecode-button&quot;&gt;&lt;a href=&quot;#bonus-code-classlanguage-textbuy-me-a-coffeecode-button&quot; aria-label=&quot;bonus code classlanguage textbuy me a coffeecode button permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bonus, &lt;code class=&quot;language-text&quot;&gt;Buy me a coffee&lt;/code&gt; button&lt;/h3&gt;
+&lt;p&gt;Set, &lt;code class=&quot;language-text&quot;&gt;buyMeACoffeeId&lt;/code&gt; of &lt;code class=&quot;language-text&quot;&gt;gatsby-meta-config.js&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;7-comments-feature&quot;&gt;&lt;a href=&quot;#7-comments-feature&quot; aria-label=&quot;7 comments feature permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7. Comments feature&lt;/h2&gt;
+&lt;p&gt;You can add comments feature by selecting one of them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; Disqus&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; utterances&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;8-other-features-of-this-template&quot;&gt;&lt;a href=&quot;#8-other-features-of-this-template&quot; aria-label=&quot;8 other features of this template permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;8. Other features of this template&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;You can add resume to &lt;code class=&quot;language-text&quot;&gt;/about&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Lazy rendering&lt;/li&gt;
+&lt;li&gt;Scroll restoration&lt;/li&gt;
+&lt;li&gt;Categorize posts&lt;/li&gt;
+&lt;li&gt;Offline caching with service worker (based gatsby)&lt;/li&gt;
+&lt;li&gt;Support GA(Google Analytics)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Let’s Start! &lt;a href=&quot;https://github.com/JaeYeopHan/gatsby-starter-bee&quot;&gt;Go&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[Kyeongin Kim Thank you for reading my resume. If you want to contact me, Please send me an email.]]></description><link>http://kkyeongin.github.io/resume-en/</link><guid isPermaLink="false">http://kkyeongin.github.io/resume-en/</guid><pubDate>Sun, 27 Jan 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;kyeongin-kim&quot;&gt;&lt;a href=&quot;#kyeongin-kim&quot; aria-label=&quot;kyeongin kim permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kyeongin Kim&lt;/h1&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;p&gt;&lt;em&gt;Thank you for reading my resume. If you want to contact me, Please send me an email.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[basic kotlin 1]]></title><description><![CDATA[Statement(문)과 Expression(식)의 구분 프로그래밍 언어론에서의 statement 와 expression…]]></description><link>http://kkyeongin.github.io/kotlin/basic-kotlin/</link><guid isPermaLink="false">http://kkyeongin.github.io/kotlin/basic-kotlin/</guid><pubDate>Sun, 09 Dec 2018 21:19:51 GMT</pubDate><content:encoded>&lt;h2 id=&quot;statement문과-expression식의-구분&quot;&gt;&lt;a href=&quot;#statement%EB%AC%B8%EA%B3%BC-expression%EC%8B%9D%EC%9D%98-%EA%B5%AC%EB%B6%84&quot; aria-label=&quot;statement문과 expression식의 구분 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Statement(문)과 Expression(식)의 구분&lt;/h2&gt;
+&lt;p&gt;프로그래밍 언어론에서의 statement 와 expression은 다르다.
+누군가 잘 신경쓰지 않을 수 있지만.. 이쪽 관련일을 했던 나로서는 꽤 신선했다.&lt;/p&gt;
+&lt;p&gt;중요한건 코틀린에선 조건문이아니라 조건식이라는 것이다.
+그리고 다른 언어(Java, C++)에서 문이 었던 것들이 코틀린에서는 식으로 나타낸다. (loop문 제외)&lt;/p&gt;
+&lt;h2 id=&quot;변수&quot;&gt;&lt;a href=&quot;#%EB%B3%80%EC%88%98&quot; aria-label=&quot;변수 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;변수&lt;/h2&gt;
+&lt;p&gt;코틀린은 자바스크립트랑 비슷하게 생기긴 했지만, 정적(static) 타입 언어다.
+type을 쓸때도 있고 안쓸때도 있지만, 컴파일 타임에서 type inference가 일어난다.
+추론이 가능하지 않을 때는 컴파일 에러를 일으킨다.&lt;/p&gt;
+&lt;p&gt;예를 들어.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; vr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;var is variable, mutable&quot;&lt;/span&gt;
+val vl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;val is value, immutable&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; compileError 
+
+compileError &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;need type (var compileError:String)&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;클래스--프로퍼티&quot;&gt;&lt;a href=&quot;#%ED%81%B4%EB%9E%98%EC%8A%A4--%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0&quot; aria-label=&quot;클래스  프로퍼티 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;클래스 &amp;#x26; 프로퍼티&lt;/h2&gt;
+&lt;p&gt;코틀린은 java를 100%지원하는 언어이다?
+그래서 java &amp;#x3C;-&gt; kotlin은 변환이 가능하다.&lt;/p&gt;
+&lt;p&gt;클래스에서 문법적으로 다른점이 있고 꾀나 재미있다.&lt;/p&gt;
+&lt;p&gt;몇가지를 소개 하자면.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;코틀린 클래스의 visibility modifier는 기본 public 이다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;프로퍼티 &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;val - read only &lt;/li&gt;
+&lt;li&gt;var - read , write ok&lt;/li&gt;
+&lt;li&gt;클래스의 프로퍼티 이름을 사용하면 getter, setter가 자동으로 호출해 준다. &lt;/li&gt;
+&lt;li&gt;커스텀 접근자 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;CustomClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;val v1&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; val v2&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Int&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        val isEqual&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;Boolean
+            &lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; v1 &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; v2
+            &lt;span class=&quot;token comment&quot;&gt;/*
+            //or
+            get(){
+                return v1 == v2
+            }
+            */&lt;/span&gt;       
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;directory &amp;#x26; package&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;package, import java와 같이 사용가능하다. &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;클래스 import 뿐만 아니라 함수 import도 가능하다. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;import {directory}.{packageName}.{functionName}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item></channel></rss>
