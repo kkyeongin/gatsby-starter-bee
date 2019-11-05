@@ -1,6 +1,6 @@
 module.exports = {
   title: `In Progress`,
-  description: `늘 하던것만 하면, 늘 얻던 것만 얻는다.`,
+  description: `통찰은 몇 가지 단서만으로는 얻어지지 않는다`,
   author: `Kyeongin`,
   introduction: `늘 하던것만 하면, 늘 얻던 것만 얻는다.`,
   siteUrl: `http://kkyeongin.github.io/`, // Your blog site url
