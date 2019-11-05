@@ -7,4 +7,10 @@ category: DevOps
 
 ## 블로그 만들기(2)
 
+* Goal
+  * Setup Jenkins for GitHub repository
+  * Configure to build automatically when it is pushed to GitHub
+  * Review
+
 ### 참고
+* [make git ssh key](https://jootc.com/p/201905122827)
