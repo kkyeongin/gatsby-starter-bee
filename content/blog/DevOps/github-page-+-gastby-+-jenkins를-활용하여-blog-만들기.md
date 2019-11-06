@@ -1,10 +1,10 @@
 ---
-title: Git Page+Docker+Jenkins
+title: GitHub Page+Docker+Jenkins
 date: 2019-02-12 19:11:05
 category: DevOps
 ---
 
-[![Video Label](http://img.youtube.com/vi/2MsN8gpT6jY/0.jpg)](https://youtu.be/2MsN8gpT6jY?t=0s)
+![](https://developer.github.com/assets/images/hero-circuit-bg.svg)
 
 ## 블로그 만들기(1)
 

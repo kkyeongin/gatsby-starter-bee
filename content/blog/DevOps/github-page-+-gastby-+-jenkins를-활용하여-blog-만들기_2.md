@@ -1,5 +1,5 @@
 ---
-title: Git Page+Docker+Jenkins(2)
+title: GitHub Page+Docker+Jenkins(2)
 date: 2019-02-13 19:11:06
 category: DevOps
 ---
@@ -7,7 +7,7 @@ category: DevOps
 
 ## 블로그 만들기(2)
 
-* Goal
+* <b> Goal </b>
   * Setup Jenkins for GitHub repository
   * Configure to build automatically when it is pushed to GitHub
   * Make Jenkinsfile
