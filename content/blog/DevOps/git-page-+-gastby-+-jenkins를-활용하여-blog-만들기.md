@@ -7,7 +7,7 @@ category: DevOps
 
 ## 블로그 만들기(1)
 
-* Goal
+* <b>Goal</b>
   * Why Gatsby?
   * Setup Git page
   * Install Docker
@@ -51,12 +51,12 @@ Docker를 사용한 이유는 AWS를 EC2서버를 사용하다 바꾸는 경우�
 
 ```sh
 # Docker CE (Community Edition) install
-sudo apt update
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+$ sudo apt update
+$ sudo apt install apt-transport-https ca-certificates curl software-properties-common
 ```
 
 ```sh
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 OK
 ```
@@ -76,15 +76,15 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 * [다른 repositories에 관한 정보](https://docs.docker.com/v17.09/engine/installation/linux/docker-ce/ubuntu/#set-up-the-repository) 를 확인한 수 받으시면 됩니다.
 
 ```sh
-sudo apt-get update
+$ sudo apt-get update
 
-sudo apt-get install docker-ce   # Docker CE (Community Edition)
+$ sudo apt-get install docker-ce   # Docker CE (Community Edition)
 ```
 
 확인을 위해
 
 ```sh
-docker --version
+$ docker --version
 ```
 
 ### 3. Installing Jenkins with Docker and Jenkins Run
@@ -94,19 +94,19 @@ docker --version
 ![Docker image url](https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/image-url.png)
 
 ```sh
-docker pull jenkins/jenkins
+$ docker pull jenkins/jenkins
 ```
 
 * <b>주의할점</b>은 jenkinsci 와 jenkins:latest등 다른 이미지들은 deprecated 됐다. 삽질하지 말고 jenkins/jenkins를 받자.
 
 ```sh
-docker pull jenkins/jenkins
+$ docker pull jenkins/jenkins
 ```
 
 jenkins을 실행시키려면 Docker run!
 
 ```sh
-docker run -it\
+$ docker run -it\
 -u root \
 -p [setting-port]:8080 -p setting-port]:50000 \
 -v /var/run/docker.sock:/var/run/docker.sock \
@@ -119,12 +119,12 @@ jenkins/jenkins
 
 ![create docker image](https://docs.docker.com/v17.09/engine/userguide/storagedriver/images/container-layers.jpg)
 
-도커 이미지는 컨테이너를 실행하기 위한 모든 정보를 가지고 있기 때문에 보통 용량이 수백메가MB에 이릅니다. 처음 이미지를 다운받을 땐 크게 부담이 안되지만 기존 이미지에 파일 하나 추가했다고 수백메가를 다시 다운받는다면 매우 비효율적일 수 밖에 없습니다.
+도커 이미지는 컨테이너를 실행하기 위한 모든 정보를 가지고 있기 때문에 보통 용량이 수백메가MB에 이릅니다. 처음 이미지를 다운받을 땐 크게 부담이 안되지만 기존 이미지에 파일 하나 추가했다고 수백메가를 다시 다운받는다면 매우 비효율적일 수 밖에 없다.
 
-도커는 이런 문제를 해결하기 위해 레이어(layer)라는 개념을 사용하고 유니온 파일 시스템을 이용하여 여러개의 레이어를 하나의 파일시스템으로 사용할 수 있게 해줍니다.
+도커는 이런 문제를 해결하기 위해 레이어(layer)라는 개념을 사용하고 유니온 파일 시스템을 이용하여 여러개의 레이어를 하나의 파일시스템으로 사용할 수 있게 했다.
 ``
 
-```sh
+```vim
 FROM ubuntu:16.04
 USER root
 
@@ -161,8 +161,8 @@ Jenkins에서 Docker를 띄워 빌드를 진행할 예정이여서 추가적으�
 기본으로 ubuntu:16.04를 받아서 추가적으로 필요한 Node.js 프로젝트 빌드 환경과 GitHub Publishing 레파지토리에 Deploy할때 쓸 ssh key도 등록 하였다.
 
 ```sh
-docker build \
--t [Dockr image name:tag] \
+$ docker build \
+-t [dockr image name:tag] \
 --build-arg ssh_prv_key=[private ssh key pwd]\
 --build-arg ssh_pub_key=[public ssh key pwd]\
 [Dockerfile pwd]
