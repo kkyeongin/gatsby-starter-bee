@@ -17,9 +17,9 @@ category: DevOps
 
 ![](https://jenkins.io/doc/book/resources/tutorials/setup-jenkins-01-unlock-jenkins-page.jpg)
 
-1. jenkins의 기본적인 것을 세팅한 후, jenkins plugin에서 jenkins blue ocean plugin을 전부 설치한다.
+1. jenkins의 기본적인 것을 세팅한 후, jenkins plugin에서 `jenkins blue ocean plugin`을 설치한다.
 
-2. jenkins > 새로운 item을 만들어 Pipe line을 선택한다.
+2. jenkins > 새로운 item을 만들어 `Pipeline`을 선택한다.
 
 3. SCM을 git으로 설정 후 github계정을 연결시켜 둔다.
 
@@ -29,7 +29,7 @@ category: DevOps
 
 4. SCM을 git으로 설정 후 github계정을 연결시켜 둔다.
 
-### 2. Make Jenkinsfile
+### 2. Make `Jenkinsfile`
 
 이제 젠킨스 파일만 만들면 된다.
 
@@ -61,7 +61,7 @@ pipeline {
 }
 ```
 
-docker image `ubuntu:dockerfile` 은 이전편에서 만들었던 docker image 이다.
+docker image `ubuntu:dockerfile` 은 이전편에서 만들었던 `docker image` 이다.
 없다면 docker hub에서 찾아올 것 이다.
 
 ### Review
@@ -70,7 +70,7 @@ docker image `ubuntu:dockerfile` 은 이전편에서 만들었던 docker image �
 
 ![](images/build_success_2.png)
 
-설정 후 blue ocesen을 통해 빌드가 처리되는 것을 볼 수 있다.
+설정 후 `blue ocesen`을 통해 빌드가 처리되는 것을 볼 수 있다.
 
 아직 부족한 점이 많아서 삽질을 많이 했고 블로그가 보강할게 많은 것 같다.
 

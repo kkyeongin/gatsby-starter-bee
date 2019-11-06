@@ -90,7 +90,7 @@ $ docker --version
 
 ### 3. Installing Jenkins with Docker and Jenkins Run
 
-도커를 깔았으면 Docker hub에 있는 Jenkins image를 받는다.
+도커를 깔았으면 Docker hub에 있는 `Jenkins image`를 받는다.
 
 ![Docker image url](https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/image-url.png)
 
@@ -122,7 +122,7 @@ jenkins/jenkins
 
 도커 이미지는 컨테이너를 실행하기 위한 모든 정보를 가지고 있기 때문에 보통 용량이 수백메가MB에 이릅니다. 처음 이미지를 다운받을 땐 크게 부담이 안되지만 기존 이미지에 파일 하나 추가했다고 수백메가를 다시 다운받는다면 매우 비효율적일 수 밖에 없다.
 
-도커는 이런 문제를 해결하기 위해 레이어(layer)라는 개념을 사용하고 유니온 파일 시스템을 이용하여 여러개의 레이어를 하나의 파일시스템으로 사용할 수 있게 했다.
+도커는 이런 문제를 해결하기 위해 `레이어(layer)`라는 개념을 사용하고 유니온 파일 시스템을 이용하여 여러개의 레이어를 하나의 파일시스템으로 사용할 수 있게 했다.
 
 ```vim
 FROM ubuntu:16.04
