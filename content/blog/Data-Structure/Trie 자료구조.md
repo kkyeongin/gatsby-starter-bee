@@ -12,7 +12,7 @@ category: Data-Structure
 
 ### Trie 자료 구조란
 
-trie는 digital tree 또는 prefix tree 또는 re<b>trie</b>val tree라 불리며, search tree의 종류 중 하나이다.
+trie는 digital tree 또는 prefix tree 또는 re<span style="color:blue">trie</span>val tree라 불리며, search tree의 종류 중 하나이다.
 
 trie는 문자열을 키로 사용하는 동적 Set 또는 연관 배열을 저장하는 트리의 확장된 구조이다.
 
@@ -20,20 +20,30 @@ trie는 문자열을 키로 사용하는 동적 Set 또는 연관 배열을 저�
 
 ### Trie 구현(insert, search)
 
+```sh
+           root
+        /   \    \
+        t   a     b
+        |   |     |
+        h   p     y
+        |   |     |
+        e   p     e
+        |   |
+        i   l
+        |   |
+        r   e
+```
+
 ```python
 class TreeNode:
     def __init__(self):
-        global ALPHABET_SIZE
-        self.children = [None] * ALPHABET_SIZE
-        self.isEndOfWord = False
+        self.children = {}
+        self.children_num = {}
 
 
 class Trie:
 
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
         self.root = self.getNode()
 
     def getNode(self):
@@ -43,69 +53,72 @@ class Trie:
         return ord(ch) - ord('a')
 
     def insert(self, key: str) -> None:
-        """
-        Inserts a word into the trie.
-        """
-
         pCrawl = self.root
         length = len(key)
+
         for level in range(length):
             index = self._getChar2Index(key[level])
 
             # if current character is not present
-            if not pCrawl.children[index]:
+            if index not in pCrawl.children:
                 pCrawl.children[index] = self.getNode()
+                pCrawl.children_num[index] = 1
+            else:
+                pCrawl.children_num[index] += 1
+
+            if level == (length-1):
+                pCrawl.children_num[index] = 0
 
             pCrawl = pCrawl.children[index]
 
-        pCrawl.isEndOfWord = True
 
     def search(self, word: str) -> bool:
-        """
-        Returns if the word is in the trie.
-        """
-
-        pCrawl = self.root
+        root = self.root
         length = len(word)
 
         for level in range(length):
             index = self._getChar2Index(word[level])
-            if not pCrawl.children[index]:
+            if index not in root.children_num:
                 return False
-            pCrawl = pCrawl.children[index]
 
-        return pCrawl != None and pCrawl.isEndOfWord
+            if level == (length-1) and (root.children_num[index] is 0):
+                return True
+
+                root = root.children[index]
 
     def startsWith(self, prefix: str) -> bool:
-        """
-        Returns if there is any word in the trie that starts with the given prefix.
-        """
-        pCrawl = self.root
+        root = self.root
         length = len(prefix)
 
         for level in range(length):
             index = self._getChar2Index(prefix[level])
-            if not pCrawl.children[index]:
+            if (index not in root.children_num) or (root.children_num[index] is 0):
                 return False
 
-            pCrawl = pCrawl.children[index]
+            root = root.children[index]
 
-        return pCrawl != None
+        return True
 
-    # if __name__ == '__main__':
+    #  if __name__ == '__main__':
     #     obj = Trie()
     #     word = "apple"
     #     prefix = "app"
     #     obj.insert(word)
     #     print("insert : "+word)
     #     print("search : "+ word + ", result = "+str(obj.search(word)))
+    #     print("search : " + word + ", result = " + str(obj.search(prefix)))
     #     print("startsWith : " + prefix + ", result = "+str( obj.startsWith(prefix)))
     #     print("startsWith : " + "the" + ", result = " + str(obj.startsWith("the")))
 ```
 
+root가 처음 가지고 있는 children의 개수는 (ALPHABET_SIZE)이며 `key('a') 경우 index 값은 0이다`
+
+그 `다음 key('p') node는 'a' node children(index : 'p'-'a')`이 된다.
+
 ```sh
 insert : apple
-search : apple, result = True
+search : apple, result = False
+search : apple, result = False
 startsWith : app, result = True
 startsWith : the, result = False
 ```
