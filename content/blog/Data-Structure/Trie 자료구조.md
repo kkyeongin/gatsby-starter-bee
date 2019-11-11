@@ -12,13 +12,27 @@ category: Data-Structure
 
 ### Trie 자료 구조란
 
-trie는 digital tree 또는 prefix tree 또는 re<b>trie</b>val tree라 불리며, search tree의 종류 중 하나이다.
+trie는 digital tree 또는 prefix tree 또는 re<span style="color:blue">trie</span>val tree라 불리며, search tree의 종류 중 하나이다.
 
 trie는 문자열을 키로 사용하는 동적 Set 또는 연관 배열을 저장하는 트리의 확장된 구조이다.
 
 예로 위 그림과 같이 tea를 찾으려면 't'를 먼저 찾고 그다음 'e', 'a' 순서대로 찾으면 된다.
 
 ### Trie 구현(insert, search)
+
+```sh
+           root
+        /   \    \
+        t   a     b
+        |   |     |
+        h   p     y
+        |   |     |
+        e   p     e
+        |   |
+        i   l
+        |   |
+        r   e
+```
 
 ```python
 class TreeNode:
@@ -102,6 +116,10 @@ class Trie:
     #     print("startsWith : " + prefix + ", result = "+str( obj.startsWith(prefix)))
     #     print("startsWith : " + "the" + ", result = " + str(obj.startsWith("the")))
 ```
+
+root가 처음 가지고 있는 children의 개수는 (ALPHABET_SIZE)이며 `key('a') 경우 index 값은 0이다`
+
+그 `다음 key('p') node는 'a' node children(index : 'p'-'a')`이 된다.
 
 ```sh
 insert : apple
